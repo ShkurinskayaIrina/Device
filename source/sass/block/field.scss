@@ -1,0 +1,14 @@
+.field {
+  display: grid;
+}
+
+.field__input {
+  font-family: inherit;
+  font-size: 16px;
+  color: inherit;
+  background-color: transparent;
+}
+
+.field__input::placeholder {
+  opacity: 1;
+}

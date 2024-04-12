@@ -1,0 +1,22 @@
+.page-header {
+  padding: 43px 60px 0;
+
+  background-color: $color-yellow;
+}
+
+.page-header__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 26px;
+  margin-bottom: 30px;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: -66px;
+}
+
+.page-header__seach {
+  grid-column: 1 / 2;
+}

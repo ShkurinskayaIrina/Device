@@ -1,1 +1,14 @@
-// Начните писать стили здесь
+//globall
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/variables.scss";
+//block
+@import "./block/additional-menu.scss";
+@import "./block/button.scss";
+@import "./block/catalog.scss";
+@import "./block/field.scss";
+@import "./block/page-header.scss";
+@import "./block/page.scss";
+@import "./block/search.scss";
+@import "./block/site-menu.scss";
+@import "./block/visually-hidden.scss";

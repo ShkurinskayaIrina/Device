@@ -1,0 +1,29 @@
+.site-menu {
+  display: flex;
+  font-family: $font-heading;
+  font-weight: 800;
+  letter-spacing: 3.5px;
+}
+
+.site-menu__catalog {
+  margin-right: auto;
+  padding-bottom: 137px;
+}
+
+.site-menu__list {
+  display: flex;
+
+  column-gap: 45px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-menu__link {
+  display: block;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+

@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Интернет-магазин «Девайс»</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="any" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__container">
+        <a class="page-header__logo logo">
+          <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 145 37" width="145" height="36">
+            <path fill="#000" d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2Zm24.11 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9Zm33.83-10-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2Zm1.3 0h7.6v25.2h-7.6v-25.2Zm10.21 12.6c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3Zm39.23 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"/>
+            <path fill="#510094" d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
+          </svg>
+         </a>
+         <form class="page-header__seach seach" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="field">
+            <span class="visually-hidden">Поиск товара.</span>
+            <input class="field__input seach__input" type="text" id="search" name="seach" placeholder="Текст поиска">
+          </label>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+          <button class="button seach__button" type="submit">Найти</button>
+         </form>
+         <ul class="page-header__menu additional-menu">
+          <li class="additional-menu__item additional-menu__item--login">
+            <a class="additional-menu__link" href="">Войти</a>
+          </li>
+          <li class="additional-menu__item  additional-menu__item--compare">
+            <a class="additional-menu__link" href="">Сравнить</a>
+          </li>
+          <li class="additional-menu__item additional-menu__item--cart">
+            <span class="additional-menu__mark">2</span>
+            <a class="additional-menu__link" href="">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="page-header__nav site-menu">
+        <div class="site-menu__catalog catalog catalog--nojs catalog--close">
+          <a class="site-menu__link" href="">Каталог товаров</a>
+          <button class="button catalog__button" type="button"></button>
+          <ul class="catalog__list">
+              <li class="catalog__item catalog__item--virtual-reality">
+                <a class="catalog__link" href="">Виртуальная реальность</a>
+              </li>
+              <li class="catalog__item catalog__item--virtual-monopods">
+                <a class="catalog__link" href="">Моноподы для cелфи</a>
+              </li>
+              <li class="catalog__item catalog__item--action-cameras">
+                <a class="catalog__link" href="">Экшн-камеры</a>
+              </li>
+              <li class="catalog__item catalog__item--fitness-bracelets">
+                <a class="catalog__link" href="">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog__item catalog__item--smart-watches">
+                <a class="catalog__link" href="">Умные часы</a>
+              </li>
+              <li class="catalog__item catalog__item--quadrocopters">
+                <a class="catalog__link" href="">Квадрокоптеры</a>
+              </li>
+          </ul>
+        </div>
+        <ul class="site-menu__list">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Доставка</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Гарантия</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Контакты</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <script src="js/catalog.js" type="module"></script>
   </body>
 </html>

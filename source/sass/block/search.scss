@@ -1,0 +1,25 @@
+.seach {
+  display: grid;
+  grid-template-columns: 357px 160px;
+}
+
+.seach__input {
+  padding: 9px 10px 8px 48px;
+  border: 2px solid $color-black;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+
+  background-image: url("../../img/icon/seach.svg");
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+}
+
+.seach__button {
+  border: 2px solid $color-black;
+  border-radius: 0 50px 50px 0;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: inherit;
+  background-color: inherit;
+}
