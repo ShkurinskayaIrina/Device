@@ -1,26 +1,73 @@
 .catalog {
   position: relative;
   list-style-type: none;
+
+  z-index: 1;
+
+  &:hover {
+    & .catalog__img {
+      opacity: 1;
+    }
+
+    & .catalog__img--plus {
+      display: none;
+    }
+
+    & .catalog__img--minus {
+      display: inline;
+    }
+
+    & .catalog__list {
+      visibility: visible;
+    }
+  }
+}
+
+.catalog .catalog__heading {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding-right: 68px;
+}
+
+.catalog .site-menu__link:hover {
+  opacity: 1;
+}
+
+.catalog__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+}
+
+.catalog__img--minus {
+  display: none;
 }
 
 .catalog__list {
-  position: absolute;
+  visibility: hidden;
+  position: relative;
   display: grid;
-  grid-template-columns: 253px 211px 211px;
+  grid-template-columns: 253px 211px max-content;
   grid-template-areas:
     "virtual-reality  fitness-bracelets quadrocopters"
-    "virtual-monopods watches ."
+    "monopods watches ."
     "action-cameras . .";
-  row-gap: 7px;
-  width: max-content;
+  row-gap: 6px;
+
   margin: 0;
-  margin-top: 7px;
   padding: 0;
+  padding-top: 7px;
   font-family: $font-text;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
   list-style-type: none;
+
+  .catalog:focus-within & {
+    visibility: visible;
+  }
 }
 
 .catalog__item {
@@ -49,64 +96,21 @@
   }
 }
 
-
-.catalog--nojs.catalog--close .catalog__list {
-  visibility: visible;
-}
-
-.catalog--close .catalog__list {
-  visibility: hidden;
-}
-
-.catalog--open .catalog__list {
-  visibility: visible;
-}
-
 .catalog__link {
   text-decoration: none;
   color: inherit;
-}
 
-.catalog__button {
-  position: absolute;
-  top: 0;
-  right: -70px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid $color-black;
-  border-radius: 50%;
-  opacity: 0.3;
-  background-color: transparent;
-
-  &::after,
-  &::before {
-    position: absolute;
-    top: 15px;
-    bottom: 15px;
-    left: calc(50% - 1px);
-    width: 2px;
-    background-color: $color-black;
+  &:hover {
+    opacity: 0.6;
   }
 
-  &::after {
-    transform: rotate(90deg);
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
   }
 
-  .catalog--close & {
-    &::after,
-    &::before {
-      content: "";
-    }
-  }
-
-  .catalog--open &,
-  .catalog--nojs & {
-    &::before {
-      content: none;
-    }
-
-    &::after {
-      content: "";
-    }
+  &:active {
+    outline: none;
+    opacity: 0.3;
   }
 }

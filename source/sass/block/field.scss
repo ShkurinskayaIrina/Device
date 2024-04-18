@@ -7,8 +7,22 @@
   font-size: 16px;
   color: inherit;
   background-color: transparent;
-}
 
-.field__input::placeholder {
-  opacity: 1;
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }

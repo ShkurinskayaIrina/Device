@@ -15,8 +15,33 @@
 .page-header__logo {
   position: absolute;
   top: -66px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
+  & .logo__img {
+    color: $color-black;
+  }
+
+  & .logo__img .logo__tittle {
+    color: $color-dark-purple;
+  }
 }
 
 .page-header__seach {
   grid-column: 1 / 2;
+}
+
+.page-header__nav {
+  padding-bottom: 28px;
 }
