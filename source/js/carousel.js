@@ -12,8 +12,17 @@ const checkPagination = (id) => {
 
 const checkSlider = (id) => {
   const sliderCurrent = carouselBlock.querySelector('.slider--current');
+
   sliderCurrent.classList.remove('slider--current');
   carouselItems[id].classList.add('slider--current');
+  const sliderNumberBlock = carouselItems[id].querySelector('.slider__number');
+
+  let sliderNumberCount = id + 1;
+  if (sliderNumberCount < 10) {
+    sliderNumberCount = (`00${sliderNumberCount}`).slice(-2);
+  }
+
+  sliderNumberBlock.textContent = sliderNumberCount;
 }
 
 const checkImg = (evt) => {

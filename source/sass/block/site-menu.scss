@@ -4,6 +4,10 @@
   font-family: $font-heading;
   font-weight: 800;
   letter-spacing: 3.5px;
+
+  & .catalog__list {
+    visibility: hidden;
+  }
 }
 
 .site-menu__catalog {

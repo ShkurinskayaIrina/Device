@@ -132,6 +132,7 @@
         </ol>
         <ol class="carousel__list">
           <li class="carousel__item slider slider--current">
+            <span class="slider__number">01</span>
             <p class="slider__heading">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <dl class="slider__properties">
@@ -155,10 +156,10 @@
                 <img class="slider__image" src="img/catalog/slider-3.png" width="560" height="560" alt="Палка для селфи.">
               </li>
             </ol>
-            <!-- <img class="slider__image" src="img/catalog/slider-1.png" width="560" height="560" alt="Квадрокоптер."> -->
             <a class="slider__link" href="#">Подробнее</a>
           </li>
           <li class="carousel__item slider">
+            <span class="slider__number">02</span>
             <p class="slider__heading">Худеем<br>правильно!</p>
             <p class="slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <dl class="slider__properties">
@@ -167,10 +168,15 @@
                 <dd class="slider__definition">48 часов</dd>
               </div>
             </dl>
-            <img class="slider__image" src="img/catalog/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+            <ol class="slider__list">
+              <li class="slider__item  slider__item--current">
+                <img class="slider__image" src="img/catalog/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+              </li>
+            </ol>
             <a class="slider__link" href="#">Подробнее</a>
           </li>
           <li class="carousel__item slider">
+            <span class="slider__number">03</span>
             <p class="slider__heading">Делай селфи,<br>как Бен Стиллер!</p>
             <p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <dl class="slider__properties">
@@ -187,11 +193,57 @@
                 <dd class="slider__definition">Карбон</dd>
               </div>
             </dl>
-            <img class="slider__image" src="img/catalog/slider-3.png" width="560" height="560" alt="Палка для селфи.">
+            <ol class="slider__list">
+              <li class="slider__item  slider__item--current">
+                <img class="slider__image" src="img/catalog/slider-3.png" width="560" height="560" alt="Палка для селфи.">
+              </li>
+            </ol>
             <a class="slider__link" href="#">Подробнее</a>
           </li>
         </ol>
       </section>
+      <section class="page-main__section page-main__section--categories categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="categories__link" href="">
+              <h3 class="categories__heading">Виртуальная реальность</h3>
+              <div class="categories__img categories__img--virtual-reality"></div>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="">
+              <h3 class="categories__heading">Моноподы<br>для cелфи</h3>
+              <div class="categories__img categories__img--monopod"></div>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="">
+              <h3 class="categories__heading">Экшн-камеры</h3>
+              <div class="categories__img categories__img--action-camera"></div>
+            </a>
+          </li>
+          <li class="categories__item ">
+            <a class="categories__link" href="">
+              <h3 class="categories__heading">Фитнес-браслеты</h3>
+              <div class="categories__img categories__img--fitness-bracelet"></div>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="">
+              <h3 class="categories__heading">Умные часы</h3>
+              <div class="categories__img categories__img--smart-watch"></div>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="">
+              <h3 class="categories__heading">Квадрокоптеры</h3>
+              <div class="categories__img categories__img--quadrocopter"></div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
     </main>
     <script src="js/main.js" type="module"></script>
   </body>

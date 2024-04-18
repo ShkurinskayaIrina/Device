@@ -1,12 +1,26 @@
 .slider {
   display: none;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(221px, max-content) minmax(116px, max-content) 90px auto;
   column-gap: 40px;
 
+  counter-increment: item;
+
   &--current {
     display: grid;
   }
+}
+
+.slider__number {
+  position: absolute;
+  top: 6px;
+  right: 50px;
+  font-family: inherit;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 700;
+  color: $color-white;
 }
 
 .slider__heading {

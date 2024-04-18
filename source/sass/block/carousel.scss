@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(338px, max-content) 90px auto;
   width: 100%;
+  margin-bottom: 70px;
 }
 
 .carousel__controls {
@@ -16,7 +17,7 @@
 
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
+  padding-right: 21px;
   padding-left: 30px;
 
   z-index: 1;
@@ -63,22 +64,4 @@
   counter-reset: item;
 
   list-style-type: none;
-}
-
-.carousel__item {
-  position: relative;
-}
-
-.carousel__item::before {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-
-  counter-increment: item;
-  content: counter(item, decimal-leading-zero);
-
-  font-size: 180px;
-  line-height: 135px;
-  font-weight: 700;
-  color: $color-white;
 }
