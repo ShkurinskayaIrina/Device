@@ -1,3 +1,30 @@
 .button {
+  padding: 10px 0 9px;
+  background-image: linear-gradient($color-white 15px, $color-yellow 15px 23px, $color-white 23px 40px);
+  font-family: $font-heading;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 4px;
+
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    background-image: none;
+    background-color: $color-yellow;
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $color-yellow-dark;
+  }
 }

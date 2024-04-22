@@ -24,7 +24,7 @@
             <input class="field__input seach__input" type="text" id="search" name="seach" placeholder="Поиск по сайту" value="Текст поиска">
           </label>
 
-          <button class="button seach__button" type="submit">Найти</button>
+          <button class="seach__button" type="submit">Найти</button>
          </form>
          <ul class="page-header__menu additional-menu">
           <li class="additional-menu__item ">
@@ -97,7 +97,7 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-      <section class="page-main__section page-main__section--carousel carousel">
+      <section class="page-main__section container carousel">
         <h2 class="visually-hidden">Карусель товаров</h2>
         <div class="carousel__controls">
           <button class="carousel__button carousel__button--last" type="button">
@@ -134,7 +134,7 @@
           <li class="carousel__item slider slider--current">
             <span class="slider__number">01</span>
             <p class="slider__heading">Порхает как бабочка, жалит как пчела!</p>
-            <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <dl class="slider__properties">
               <div class="slider__feature">
                 <dt class="slider__title">Дальность полета</dt>
@@ -156,12 +156,12 @@
                 <img class="slider__image" src="img/catalog/slider-3.png" width="560" height="560" alt="Палка для селфи.">
               </li>
             </ol>
-            <a class="slider__link" href="#">Подробнее</a>
+            <a class="slider__button button" href="#">Подробнее</a>
           </li>
           <li class="carousel__item slider">
             <span class="slider__number">02</span>
             <p class="slider__heading">Худеем<br>правильно!</p>
-            <p class="slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <dl class="slider__properties">
               <div class="slider__feature">
                 <dt class="slider__title">Без подзарядки</dt>
@@ -173,12 +173,12 @@
                 <img class="slider__image" src="img/catalog/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
               </li>
             </ol>
-            <a class="slider__link" href="#">Подробнее</a>
+            <a class="slider__button button" href="#">Подробнее</a>
           </li>
           <li class="carousel__item slider">
             <span class="slider__number">03</span>
             <p class="slider__heading">Делай селфи,<br>как Бен Стиллер!</p>
-            <p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <dl class="slider__properties">
               <div class="slider__feature">
                 <dt class="slider__title">Длина палки</dt>
@@ -198,11 +198,11 @@
                 <img class="slider__image" src="img/catalog/slider-3.png" width="560" height="560" alt="Палка для селфи.">
               </li>
             </ol>
-            <a class="slider__link" href="#">Подробнее</a>
+            <a class="slider__button button" href="#">Подробнее</a>
           </li>
         </ol>
       </section>
-      <section class="page-main__section page-main__section--categories categories">
+      <section class="page-main__section container categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories__list">
           <li class="categories__item">
@@ -242,6 +242,36 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section class="page-main__section services">
+        <h2 class="visually-hidden">Предоставляемые услуги</h2>
+        <div class="services__container container">
+          <ol class="services__list">
+            <li class="services__item services__item--current">
+              <button class="services__button button">Доставка</button>
+            </li>
+            <li class="services__item">
+              <button class="services__button button">Гарантия</button>
+            </li>
+            <li class="services__item">
+              <button class="services__button button">Кредит</button>
+            </li>
+          </ol>
+          <ol class="services__description-list">
+            <li class="services__description services__description--delivery services__description--current">
+              <h3 class="services__heading">Доставка</h3>
+              <p class="services__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services__description services__description--guarantee">
+              <h3 class="services__heading">Гарантия</h3>
+              <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services__description services__description--credit">
+              <h3 class="services__heading">Кредит</h3>
+              <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </li>
+          </ol>
+        </div>
       </section>
 
     </main>

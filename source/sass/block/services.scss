@@ -1,0 +1,105 @@
+.services {
+  background-image: linear-gradient($color-white 103px, $color-light 103px);
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: 123px;
+  padding-bottom: 72px;
+}
+
+.services__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  margin: 0;
+  padding: 65px 0;
+  list-style-type: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -7px;
+    width: 7px;
+    background-color: $color-black;
+  }
+}
+
+.services__button {
+  min-width: 160px;
+}
+
+.services__description {
+  display: none;
+  grid-template-columns: 1fr 200px;
+  column-gap: 40px;
+  row-gap: 34px;
+
+  &::after {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+    margin-top: 7px;
+  }
+
+  &--delivery::after {
+    content: url("../../img/icon/delivery.svg");
+  }
+
+
+  &--guarantee::after {
+    content: url("../../img/icon/guarantee.svg");
+  }
+
+  &--credit::after {
+    margin-left: 17px;
+    content: url("../../img/icon/credit.svg");
+  }
+
+
+  &--current {
+    display: grid;
+  }
+}
+
+.services__item--current {
+  background-color: $color-black;
+
+  & .services__button {
+    background-image: none;
+    color: $color-yellow;
+    background-color: $color-black;
+  }
+
+  & .services__description {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.services__description-list {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  list-style-type: none;
+}
+
+.services__heading {
+  align-self: end;
+  margin: 0;
+  font-family: $font-heading;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.services__text {
+  grid-column: 1 / 2;
+  margin: 0;
+}
