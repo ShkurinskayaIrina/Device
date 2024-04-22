@@ -1,0 +1,62 @@
+.special-offer__link {
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: inherit;
+  text-decoration: none;
+  background-color: $color-light;
+
+  &:hover {
+    & .special-offer__icon {
+      background-color: $color-yellow-dark;
+    }
+
+    & .special-offer__infomation svg {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+}
+
+.special-offer__icon {
+  align-self: stretch;
+  background-image: url("../../img/icon/delivery-special.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-yellow;
+}
+
+.special-offer__text {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.special-offer__infomation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: rgba($color-gray, 0.5);
+
+  & svg {
+    opacity: 0.3;
+  }
+}
