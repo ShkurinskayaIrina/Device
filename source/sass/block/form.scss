@@ -1,0 +1,23 @@
+.form__button {
+  &:hover {
+    color: $color-white;
+    background-color: $color-black;
+    border-color: $color-black;
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active:not(:disabled) {
+    outline: none;
+    background-color: $color-black;
+    color: rgba($color-white, 0.3);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+}

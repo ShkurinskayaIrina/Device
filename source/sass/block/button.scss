@@ -1,6 +1,6 @@
 .button {
   padding: 10px 0 9px;
-  background-image: linear-gradient($color-white 15px, $color-yellow 15px 23px, $color-white 23px 40px);
+  background-image: linear-gradient(transparent 15px, $color-yellow 15px 23px, transparent 23px 40px);
   font-family: $font-heading;
   font-size: 18px;
   font-weight: 800;
@@ -11,6 +11,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-black;
+  background-color: transparent;
   text-decoration: none;
   cursor: pointer;
 

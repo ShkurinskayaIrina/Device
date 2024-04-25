@@ -11,6 +11,10 @@
   background-image: url("../../img/icon/seach.svg");
   background-repeat: no-repeat;
   background-position: left 16px center;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .seach__button {
@@ -23,25 +27,5 @@
 
   color: inherit;
   background-color: inherit;
-
-  &:hover:not(:disabled) {
-    color: $color-white;
-    background-color: $color-black;
-  }
-
-  &:focus {
-    outline: 2px solid $color-purple;
-    outline-offset: 2px;
-  }
-
-  &:active:not(:disabled) {
-    outline: none;
-    background-color: $color-black;
-    color: rgba($color-white, 0.3);
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.3;
-  }
+  cursor: pointer;
 }

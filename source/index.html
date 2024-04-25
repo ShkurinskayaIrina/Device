@@ -18,13 +18,13 @@
             <path class="logo__tittle" fill="currentColor" d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
           </svg>
          </a>
-         <form class="page-header__seach seach" action="https://echo.htmlacademy.ru/" method="get">
+         <form class="page-header__seach seach form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="field">
             <span class="visually-hidden">Поиск товара.</span>
             <input class="field__input seach__input" type="text" id="search" name="seach" placeholder="Поиск по сайту" value="Текст поиска">
           </label>
 
-          <button class="seach__button" type="submit">Найти</button>
+          <button class="seach__button form__button" type="submit">Найти</button>
          </form>
          <ul class="page-header__menu additional-menu">
           <li class="additional-menu__item ">
@@ -133,7 +133,7 @@
         <ol class="carousel__list">
           <li class="carousel__item slider slider--current">
             <span class="slider__number">01</span>
-            <p class="slider__heading">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slider__heading page__heading">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <dl class="slider__properties">
               <div class="slider__feature">
@@ -160,7 +160,7 @@
           </li>
           <li class="carousel__item slider">
             <span class="slider__number">02</span>
-            <p class="slider__heading">Худеем<br>правильно!</p>
+            <p class="slider__heading page__heading">Худеем<br>правильно!</p>
             <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <dl class="slider__properties">
               <div class="slider__feature">
@@ -177,7 +177,7 @@
           </li>
           <li class="carousel__item slider">
             <span class="slider__number">03</span>
-            <p class="slider__heading">Делай селфи,<br>как Бен Стиллер!</p>
+            <p class="slider__heading page__heading">Делай селфи,<br>как Бен Стиллер!</p>
             <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <dl class="slider__properties">
               <div class="slider__feature">
@@ -259,15 +259,15 @@
           </ol>
           <ol class="services__description-list">
             <li class="services__description services__description--delivery services__description--current">
-              <h3 class="services__heading">Доставка</h3>
+              <h3 class="services__heading page__heading">Доставка</h3>
               <p class="services__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
             <li class="services__description services__description--guarantee">
-              <h3 class="services__heading">Гарантия</h3>
+              <h3 class="services__heading page__heading">Гарантия</h3>
               <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
             <li class="services__description services__description--credit">
-              <h3 class="services__heading">Кредит</h3>
+              <h3 class="services__heading page__heading">Кредит</h3>
               <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
           </ol>
@@ -294,11 +294,12 @@
         </a>
       </section>
       <section class="page-main__section container info">
+        <h2 class="visually-hidden">Информация</h2>
         <div class="info__block">
-          <h2 class="info__heading">О нас</h2>
+          <h3 class="info__heading page__heading">О нас</h3>
           <p class="info__text">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
           <p class="info__text">Мы можем доставить ваш товар в самые отдалённые<br>уголки России транспортными компаниями:</p>
-          <h3 class="visually-hidden">Список транспортных компаний.</h3>
+          <h4 class="visually-hidden">Список транспортных компаний</h4>
           <ul class="info__deliverers-list">
             <li class="info__deliverers-item">Меловые линии</li>
             <li class="info__deliverers-item">СДИК</li>
@@ -307,16 +308,16 @@
           <a class="info__button button" href="">Подробнее о нас</a>
         </div>
         <div class="info__block">
-          <h2 class="info__heading">Контакты</h2>
+          <h3 class="info__heading page__heading">Контакты</h3>
           <p  class="info__text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
           <div class="info__contacts">
-            <h3 class="info__subtitle">Интернет-магазин «Девайс»</h3>
+            <p class="info__subtitle">Интернет-магазин «Девайс»</p>
             <p class="info__address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="info__phone" href="tel:88128121212">+7 (812) 812-12-12</a>
           </div>
 
           <div class="info__container">
-            <h3 class="info__subtitle">Время работы</h3>
+            <p class="info__subtitle">Время работы</p>
             <ul class="info__schedule">
               <li>пн—пт: с 10:00 до 22:00</li>
               <li>сб—вс: с 10:00 до 19:00</li>
@@ -324,6 +325,20 @@
           </div>
           <a class="info__button button" href="">Напишите нам</a>
         </div>
+      </section>
+      <section class="page-main__section subscrintion">
+        <header class="subscrintion__header container">
+          <h2 class="subscrintion__heading page__heading">Подпишитесь на рассылку</h2>
+          <p class="subscrintion__text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        </header>
+        <form class="subscrintion__form form container" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="field">
+            <span class="visually-hidden">Email</span>
+            <input class="subscrintion__input field__input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+          </label>
+          <button class="subscrintion__button form__button" type="submit">Подписаться</button>
+          <p class="subscrintion__disclaimer">Это бесплатно</p>
+         </form>
       </section>
     </main>
     <script src="js/main.js" type="module"></script>
