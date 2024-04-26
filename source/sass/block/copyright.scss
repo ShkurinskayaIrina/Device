@@ -1,0 +1,25 @@
+.copyright {
+  display: inline-block;
+
+  &:hover .copyright__img {
+    color: $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+
+    .copyright__img {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__img {
+  display: block;
+  color: $color-yellow-dark;
+}

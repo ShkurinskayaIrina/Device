@@ -14,7 +14,7 @@
       background-color: $color-yellow-dark;
     }
 
-    & .special-offer__infomation svg {
+    & .special-offer__infomation::after {
       opacity: 1;
     }
   }
@@ -56,7 +56,8 @@
 
   background-color: rgba($color-gray, 0.5);
 
-  & svg {
+  &::after {
+    content: url("../../img/icon/information.svg");
     opacity: 0.3;
   }
 }

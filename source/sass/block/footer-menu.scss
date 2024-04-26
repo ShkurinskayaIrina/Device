@@ -1,0 +1,45 @@
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  margin: 0;
+
+  font-family: $font-heading;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  list-style-type: none;
+}
+
+.footer-menu__link {
+  position: relative;
+  text-decoration: none;
+  color: $color-white;
+
+  &:hover {
+    color: $color-yellow-dark;
+
+    &::after {
+      background-color: $color-yellow-dark;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent;
+  }
+}

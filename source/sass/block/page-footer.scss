@@ -1,0 +1,97 @@
+.page-footer {
+  position: relative;
+  top: -150px;
+
+  padding: 61px 0 48px;
+
+  background-color: $color-dark;
+  color: $color-white;
+
+  & .logo__img {
+    color: $color-yellow-dark;
+  }
+}
+
+.page-footer__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  grid-template-areas:
+    "logo . ."
+    "address footer__menu phone"
+    ". social copyright";
+  row-gap: 35px;
+  column-gap: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 7px;
+    left: 1px;
+    bottom: 29px;
+
+    background-color: $color-yellow-dark;
+  }
+}
+
+.page-footer__logo {
+  grid-area: logo;
+}
+
+.page-footer__address-text {
+  grid-area: address;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-footer__phone {
+  grid-area: phone;
+  justify-self: end;
+  padding-top: 6px;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    color: $color-yellow-dark;
+  }
+
+  &:focus-within {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__phone-link {
+  color: inherit;
+  letter-spacing: 0.4px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.page-footer__menu {
+  grid-area: footer__menu;
+  margin-left: 35px;
+  padding: 0;
+}
+
+.page-footer__social {
+  grid-area: social;
+  justify-self: center;
+  padding: 13px 0;
+}
+
+.page-footer__copyright {
+  grid-area: copyright;
+  justify-self: end;
+  align-self: center;
+}

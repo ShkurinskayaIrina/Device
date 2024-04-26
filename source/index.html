@@ -13,7 +13,8 @@
     <header class="page-header">
       <div class="page-header__container">
         <a class="page-header__logo logo">
-          <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 145 37" width="145" height="36">
+          <span class="visually-hidden">Логотип интернет-магазина</span>
+          <svg class="logo__img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 145 37" width="145" height="36">
             <path fill="currentColor" d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2Zm24.11 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9Zm33.83-10-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2Zm1.3 0h7.6v25.2h-7.6v-25.2Zm10.21 12.6c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3Zm39.23 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"/>
             <path class="logo__tittle" fill="currentColor" d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
           </svg>
@@ -28,13 +29,13 @@
          </form>
          <ul class="page-header__menu additional-menu">
           <li class="additional-menu__item ">
-            <a class="additional-menu__link additional-menu__link--login" href="">Войти</a>
+            <a class="additional-menu__link additional-menu__link--login" href="#">Войти</a>
           </li>
           <li class="additional-menu__item">
-            <a class="additional-menu__link additional-menu__link--compare" href="">Сравнить</a>
+            <a class="additional-menu__link additional-menu__link--compare" href="#">Сравнить</a>
           </li>
           <li class="additional-menu__item">
-            <a class="additional-menu__link additional-menu__link--cart" href="">
+            <a class="additional-menu__link additional-menu__link--cart" href="#">
               <span class="additional-menu__mark">2</span>
               Корзина
             </a>
@@ -43,9 +44,10 @@
       </div>
       <nav class="page-header__nav site-menu">
         <div class="site-menu__item catalog">
-          <a class="site-menu__link catalog__heading" href="">
+          <a class="site-menu__link catalog__heading" href="#">
             Каталог товаров
-            <svg class="catalog__img catalog__img--plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 51" width="50" height="51">
+            <span class="visually-hidden">Открыть</span>
+            <svg class="catalog__img catalog__img--plus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 51" width="50" height="51">
               <circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/>
               <g clip-path="url(#a)">
                 <path fill="#000" d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/>
@@ -56,41 +58,41 @@
                 </clipPath>
               </defs>
             </svg>
-            <svg class="catalog__img catalog__img--minus"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 51" width="50" height="51">
+            <svg class="catalog__img catalog__img--minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 51" width="50" height="51">
               <path stroke="#000" stroke-width="2" d="M49 25.79a24 24 0 1 1-48 0 24 24 0 0 1 48 0Z"/>
               <path fill="#000" d="M33 24.79H17v2h16v-2Z"/>
             </svg>
           </a>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--virtual-reality">
-              <a class="catalog__link" href="">Виртуальная реальность</a>
+              <a class="catalog__link" href="#">Виртуальная реальность</a>
             </li>
             <li class="catalog__item catalog__item--monopods">
-              <a class="catalog__link" href="">Моноподы для cелфи</a>
+              <a class="catalog__link" href="#">Моноподы для cелфи</a>
             </li>
             <li class="catalog__item catalog__item--action-cameras">
-              <a class="catalog__link" href="">Экшн-камеры</a>
+              <a class="catalog__link" href="#">Экшн-камеры</a>
             </li>
             <li class="catalog__item catalog__item--fitness-bracelets">
-              <a class="catalog__link" href="">Фитнес-браслеты</a>
+              <a class="catalog__link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="catalog__item catalog__item--smart-watches">
-              <a class="catalog__link" href="">Умные часы</a>
+              <a class="catalog__link" href="#">Умные часы</a>
             </li>
             <li class="catalog__item catalog__item--quadrocopters">
-              <a class="catalog__link" href="">Квадрокоптеры</a>
+              <a class="catalog__link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
         <ul class="site-menu__list">
           <li class="site-menu__item">
-            <a class="site-menu__link" href="">Доставка</a>
+            <a class="site-menu__link" href="#">Доставка</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link" href="">Гарантия</a>
+            <a class="site-menu__link" href="#">Гарантия</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link" href="">Контакты</a>
+            <a class="site-menu__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -102,13 +104,13 @@
         <div class="carousel__controls">
           <button class="carousel__button carousel__button--last" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 60" width="20" height="60">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 60" width="20" height="60">
               <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z"/>
             </svg>
           </button>
           <button class="carousel__button carousel__button--next" type="button">
             <span class="visually-hidden">Следующее фото</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 60" width="20" height="60">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 60" width="20" height="60">
               <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z"/>
             </svg>
           </button>
@@ -275,22 +277,10 @@
       </section>
       <section class="page-main__section container special-offer">
         <h2 class="visually-hidden">Специальное предложение</h2>
-        <a class="special-offer__link" href="">
+        <a class="special-offer__link" href="#">
           <span class="special-offer__icon"></span>
           <p class="special-offer__text">Доставим редкий товар под заказ</p>
-          <div class="special-offer__infomation">
-            <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_64526_747)">
-                <path d="M2 0H0v2h2V0Z" fill="#000"/>
-                <path d="M2 4H0v8h2V4Z" fill="#000"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_64526_747">
-                  <path fill="#fff" d="M0 0h2v12H0z"/>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
+          <span class="special-offer__infomation"></span>
         </a>
       </section>
       <section class="page-main__section container info">
@@ -305,7 +295,7 @@
             <li class="info__deliverers-item">СДИК</li>
             <li class="info__deliverers-item">ТоксБерри</li>
           </ul>
-          <a class="info__button button" href="">Подробнее о нас</a>
+          <a class="info__button button" href="#">Подробнее о нас</a>
         </div>
         <div class="info__block">
           <h3 class="info__heading page__heading">Контакты</h3>
@@ -323,7 +313,7 @@
               <li>сб—вс: с 10:00 до 19:00</li>
             </ul>
           </div>
-          <a class="info__button button" href="">Напишите нам</a>
+          <a class="info__button button" href="#">Напишите нам</a>
         </div>
       </section>
       <section class="page-main__section subscrintion">
@@ -341,6 +331,83 @@
          </form>
       </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo logo">
+          <span class="visually-hidden">Логотип интернет-магазина</span>
+          <svg class="logo__img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 145 37" width="145" height="36">
+            <path fill="currentColor" d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2Zm24.11 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9Zm33.83-10-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2Zm1.3 0h7.6v25.2h-7.6v-25.2Zm10.21 12.6c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3Zm39.23 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"/>
+            <path class="logo__tittle" fill="currentColor" d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
+          </svg>
+        </a>
+        <p class="page-footer__address-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+        <label class="page-footer__phone">Тел.:
+          <a class="page-footer__phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
+        </label>
+        <ul class="page-footer__menu footer-menu">
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Доставка</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Контакты</a>
+          </li>
+         </ul>
+         <div class="page-footer__social social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item social__item--facebook">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__img" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="social__img-circle"  cx="20" cy="20" r="20" fill="CurrentColor"/>
+                  <path class="social__img-icon" d="M22.5 14H25v-3h-3.4c-2.8 0-3.6 1.7-3.6 4.2V17h-2v3h2v9h3v-9h3.3l.6-3H21v-1.5c0-.8.3-1.5 1.5-1.5Z" fill="#444"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--instagram">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social__img" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="social__img-circle" cx="20" cy="20" r="20" fill="CurrentColor"/>
+                  <path class="social__img-icon" d="M20 22a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#444"/>
+                  <path class="social__img-icon" d="M26.7 13.3c-.9-.9-2-1.3-3.4-1.3h-6.6c-2.8 0-4.7 1.9-4.7 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4v-6.6c0-1.4-.4-2.6-1.3-3.4ZM20 24.1c-2.2 0-4.1-1.8-4.1-4.1s1.9-4.1 4.1-4.1c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="#444"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--twitter">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="social__img" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="social__img-circle" cx="20" cy="20" r="20" fill="CurrentColor"/>
+                  <path class="social__img-icon" d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
+                </svg>
+              </a>
+            </li>
+           </ul>
+         </div>
+
+         <a class="page-footer__copyright copyright" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Разработано HTML Academy</span>
+          <svg class="copyright__img" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 12.9v2.6h2.5v-2.6H0Z" fill="CurrentColor"/>
+            <path d="M11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9Z" fill="CurrentColor"/>
+            <path d="M26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Z" fill="CurrentColor"/>
+            <path d="M41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3Z" fill="CurrentColor"/>
+            <path d="M47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7Z" fill="CurrentColor"/>
+            <path d="M28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6Z" fill="CurrentColor"/>
+            <path d="M44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22Z" fill="CurrentColor"/>
+            <path d="M55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Z" fill="CurrentColor"/>
+            <path d="M68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Z" fill="CurrentColor"/>
+            <path d="M78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6Z" fill="CurrentColor"/>
+            <path d="M98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Z" fill="CurrentColor"/>
+            <path d="m109.4 27-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" fill="CurrentColor"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
