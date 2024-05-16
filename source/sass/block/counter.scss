@@ -1,0 +1,84 @@
+.counter {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: 60px;
+}
+
+.counter__button {
+  grid-row: 1 / 2;
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: $color-light;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-gray;
+
+    &::before,
+    &::after {
+      background-color: rgba($color-black, 0.6);
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+  }
+
+  &:active {
+    outline: none;
+
+    &::before,
+    &::after {
+      background-color: rgba($color-black, 0.3);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 8px);
+
+    width: 16px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  &--minus {
+    grid-column: 1 / 2;
+  }
+
+  &--plus {
+    grid-column: 3 / 4;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(50% - 8px);
+
+      width: 16px;
+      height: 2px;
+      background-color: $color-black;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.counter__input {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  text-align: center;
+  background-color: $color-light;
+  appearance: textfield;
+
+  &--error {
+    outline: 2px solid $color-error;
+  }
+}

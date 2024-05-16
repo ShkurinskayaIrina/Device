@@ -1,15 +1,17 @@
-.carousel {
+.carousel__container {
   position: relative;
+  top: -36px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(338px, max-content) 90px auto;
+  grid-template-rows: minmax(221px, max-content) minmax(116px, max-content) 90px auto;
+  background-image: linear-gradient(#ffe17f 0 150px, transparent 150px 100%);
 }
 
 .carousel__controls {
   grid-column: 1/2;
-
   position: absolute;
-  top: 212px;
+  top: 38%;
   left: 0;
   right: 0;
 
@@ -23,7 +25,7 @@
 
 .carousel__pagination {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   justify-self: flex-end;
 }
 

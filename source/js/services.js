@@ -12,6 +12,7 @@ const checkServiceDescription = (id) => {
 const onServicesListClick = (evt) => {
   if (evt.target && evt.target.tagName === 'BUTTON') {
     const idActiveElement = servicesBtbList.indexOf(evt.target);
+    console.log(idActiveElement);
 
     const serviceCurrent = servicesBlock.querySelector('.services__item--current');
     if (serviceCurrent) {

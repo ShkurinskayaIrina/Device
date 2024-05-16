@@ -1,5 +1,6 @@
 .additional-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -43,6 +44,13 @@
     background-image: url("../../img/icon/login.svg");
   }
 
+  &--log-in {
+    & > span:last-child {
+      margin-left: 27px;
+      opacity: 0.3;
+    }
+  }
+
   &--compare {
     padding-left: 22px;
     background-image: url("../../img/icon/compare.svg");
@@ -55,21 +63,21 @@
     background-image: url("../../img/icon/cart.svg");
     background-position: left 15px top 11px;
   }
+}
 
-  & span {
-    position: absolute;
-    bottom: 9px;
-    left: 0;
+.additional-menu__mark {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    height: 21px;
-    min-width: 21px;
+  height: 21px;
+  min-width: 21px;
 
-    font-size: 14px;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
+  font-size: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }

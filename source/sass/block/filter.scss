@@ -1,0 +1,28 @@
+
+.filter {
+  padding-right: 40px;
+  padding-left: 60px;
+}
+
+.filter__heading {
+  display: inline-block;
+  margin-bottom: 33px;
+  padding: 20px 0 19px;
+}
+
+.filter__group {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  padding-right: 20px;
+
+  border: none;
+
+  &:last-of-type {
+    margin-bottom: 36px;
+  }
+}
+
+.filter__button {
+  width: 100%;
+}

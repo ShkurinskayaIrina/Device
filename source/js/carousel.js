@@ -1,13 +1,13 @@
 const carouselBlock = document.querySelector('.carousel');
-const paginationBlock = carouselBlock.querySelector('.pagination');
+const paginationBlock = carouselBlock.querySelector('.pagination-point');
 
 const carouselItems = carouselBlock.querySelectorAll('.carousel__item');
-const paginationList = [...document.querySelectorAll('.pagination__button')];
+const paginationList = [...document.querySelectorAll('.pagination-point__button')];
 
 const checkPagination = (id) => {
-  const  paginationCurrent = paginationBlock.querySelector('.pagination__button--current');
-  paginationCurrent.classList.remove('pagination__button--current');
-  paginationList[id].classList.add('pagination__button--current');
+  const  paginationCurrent = paginationBlock.querySelector('.pagination-point__button--current');
+  paginationCurrent.classList.remove('pagination-point__button--current');
+  paginationList[id].classList.add('pagination-point__button--current');
 }
 
 const checkSlider = (id) => {

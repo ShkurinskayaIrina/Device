@@ -1,0 +1,138 @@
+.delivery {
+  position: relative;
+  width: 920px;
+  padding: 62px 70px 62px;
+  border: 10px solid $color-black;
+  background-color: $color-white;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.delivery__heading {
+  margin: 0;
+}
+
+.delivery__form {
+  display: grid;
+  grid-template-columns: 200px 160px 40px 140px 40px 180px;
+  grid-template-areas:
+    "name name . email email email"
+    "order order order order . counter"
+    "button . . . . .";
+  row-gap: 42px;
+  margin-top: 42px;
+}
+
+.delivery__field {
+  &--name {
+    grid-area: name;
+  }
+
+  &--email {
+    grid-area: email;
+  }
+
+  &--order {
+    grid-area: order;
+  }
+
+  &--counter {
+    grid-area: counter;
+  }
+
+  &--error {
+    & > .delivery__input {
+      outline: 2px solid $color-error;
+      outline-offset: -2px;
+    }
+
+    & > .delivery__message {
+      color: $color-error;
+    }
+  }
+}
+
+.delivery__title {
+  margin-bottom: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.delivery__input {
+  padding: 20px;
+  padding-top: 17px;
+  background-color: $color-light;
+
+  &:hover {
+    background-color: $color-gray;
+  }
+
+  &.field__input:focus {
+    outline: 2px solid $color-purple;
+  }
+
+  &.field__input::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.delivery__message {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.delivery__caption {
+  position: relative;
+  display: grid;
+}
+
+.delivery__info {
+  margin-left: 14px;
+  padding: 0;
+  position: absolute;
+  top: -2px;
+  right: 34px;
+  width: 26px;
+  height: 26px;
+  background-color: $color-yellow;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../../img/icon/information.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    &::before {
+      content: url("../../img/icon/triangle-info.svg");
+      position: absolute;
+      bottom: -50%;
+      right: 6px;
+    }
+
+    &::after {
+      content: attr(data-delivery__info);
+      position: absolute;
+      top: 36px;
+      right: -34px;
+      display: block;
+      width: 200px;
+      padding: 18px 17px 22px 19px;
+      background-color: $color-black;
+      color: $color-white;
+      box-shadow: 0 10px 0 rgba($color-black, 0.1);
+      font-family: $font-text;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      white-space: pre-line;
+      z-index: 1;
+    }
+  }
+}
+
+.delivery__button {
+  grid-area: button;
+}

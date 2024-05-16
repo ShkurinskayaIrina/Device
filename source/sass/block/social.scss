@@ -12,7 +12,7 @@
   width: 40px;
   height: 40px;
 
-  &:hover .social__img-circle {
+  &:hover .social__img {
     color: $color-yellow-dark;
   }
 
@@ -24,12 +24,13 @@
   &:active {
     outline: none;
 
-    & .social__img-icon {
-      opacity: 0.3;
+    & .social__img {
+      fill: rgba($color-dark, 0.3);
     }
   }
 }
 
-.social__img-circle {
+.social__img {
   color: rgba($color-white, 0.3);
+  fill: $color-dark;
 }

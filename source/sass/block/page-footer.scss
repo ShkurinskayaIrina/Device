@@ -1,7 +1,4 @@
 .page-footer {
-  position: relative;
-  top: -150px;
-
   padding: 61px 0 48px;
 
   background-color: $color-dark;
@@ -9,6 +6,7 @@
 
   & .logo__img {
     color: $color-yellow-dark;
+    fill: $color-yellow-dark;
   }
 }
 
@@ -37,6 +35,7 @@
 
 .page-footer__logo {
   grid-area: logo;
+  justify-self: flex-start;
 }
 
 .page-footer__address-text {

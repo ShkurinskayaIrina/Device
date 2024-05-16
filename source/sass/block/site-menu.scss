@@ -1,11 +1,7 @@
 .site-menu {
   display: flex;
 
-  font-family: $font-heading;
-  font-weight: 800;
-  letter-spacing: 3.5px;
-
-  & .catalog__list {
+  & .catalog-menu__list {
     visibility: hidden;
   }
 }
@@ -16,10 +12,8 @@
 }
 
 .site-menu__list {
-  position: relative;
-  left: -16px;
-
   display: flex;
+  flex-wrap: wrap;
   column-gap: 45px;
   margin: 0;
   padding: 0;
@@ -36,7 +30,7 @@
 .site-menu__link {
   position: relative;
   display: block;
-  padding: 10px 0;
+  padding: 15px 0 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;

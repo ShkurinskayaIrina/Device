@@ -1,2 +1,2 @@
-import './carousel.js';
-import './services.js';
+import './carousel.min.js';
+import './services.min.js';

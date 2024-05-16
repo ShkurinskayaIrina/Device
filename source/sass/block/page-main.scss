@@ -1,8 +1,7 @@
-.page-main {
-  position: relative;
-  top: -150px;
+.page-main__section:first-of-type {
+  margin-bottom: 35px;
 }
 
-.page-main__section:not(:last-child) {
+.page-main__section:not(:first-of-type):not(:last-of-type) {
   margin-bottom: 70px;
 }
