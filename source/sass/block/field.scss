@@ -1,3 +1,9 @@
+@mixin input-icon($icon, $position) {
+  background-image: $icon;
+  background-repeat: no-repeat;
+  background-position: $position center;
+}
+
 .field {
   display: grid;
 }
@@ -6,11 +12,10 @@
   font-family: inherit;
   font-size: 16px;
   color: inherit;
-  background-color: transparent;
+  border: 2px solid transparent;
 
   &:focus {
-    outline: 2px solid $color-purple;
-    outline-offset: 2px;
+    outline: none;
   }
 
   &:active {
@@ -24,5 +29,17 @@
 
   &::placeholder {
     opacity: 0.5;
+  }
+
+  &--seach {
+    @include input-icon(url("../../img/icon/seach.svg"), left 14px);
+  }
+
+  &--name {
+    @include input-icon(url("../../img/icon/name.svg"), right 17px);
+  }
+
+  &--email {
+    @include input-icon(url("../../img/icon/email.svg"), right 17px);
   }
 }

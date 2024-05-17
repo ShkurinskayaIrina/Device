@@ -1,16 +1,15 @@
 .seach {
   display: grid;
   grid-template-columns: 357px 160px;
+  grid-template-rows: max-content;
 }
 
 .seach__input {
+  grid-column: 1/2;
   padding: 9px 10px 8px 48px;
   border: 2px solid $color-black;
   border-radius: 50px 0 0 50px;
-
-  background-image: url("../../img/icon/seach.svg");
-  background-repeat: no-repeat;
-  background-position: left 16px center;
+  background-color: transparent;
 
   &::placeholder {
     opacity: 0.3;
@@ -18,14 +17,22 @@
 }
 
 .seach__button {
-  border: 2px solid $color-black;
-  border-left: none;
-  border-radius: 0 50px 50px 0;
+  &:hover,
+  &:active:not(:disabled) {
+    background-color: transparent;
 
-  font-family: inherit;
-  font-size: 16px;
+    & span {
+      background-color: $color-black;
+    }
+  }
 
-  color: inherit;
-  background-color: inherit;
-  cursor: pointer;
+  & span {
+    display: block;
+    padding: 8px 0 9px;
+    width: 100%;
+
+    border: 2px solid $color-black;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+  }
 }

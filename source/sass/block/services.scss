@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 280px 1fr;
   column-gap: 123px;
-  padding-bottom: 72px;
+  padding-bottom: 71px;
 }
 
 .services__list {
@@ -69,17 +69,27 @@
 .services__item--current {
   background-color: $color-black;
 
+  &:focus-within {
+    outline: 2px solid #af4fff;
+    outline-offset: 2px;
+  }
+
   & .services__button {
     background-image: none;
     color: $color-yellow;
     background-color: $color-black;
-  }
 
-  & .services__description {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    &:hover {
+      color: rgba($color-yellow, 0.5);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      color: rgba($color-yellow, 0.3);
+    }
   }
 }
 

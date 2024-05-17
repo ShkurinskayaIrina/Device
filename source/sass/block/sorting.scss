@@ -1,0 +1,75 @@
+.sorting {
+  display: flex;
+  padding: 20px 40px;
+  background-color: $color-light;
+}
+
+.sorting__heading {
+  max-width: 200px;
+}
+
+.sorting__form {
+  margin: 0 auto;
+}
+
+.sorting__select {
+  max-width: 200px;
+  padding: 4px 50px 4px 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  appearance: none;
+  background-image: url("../../img/icon/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.sorting__toggle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+
+  &:hover .sorting__img {
+    color: rgba($color-black, 0.5);
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active .sorting__img {
+    outline: none;
+    color: rgba($color-black, 1);
+  }
+}
+
+.sorting__img {
+  color: rgba($color-black, 0.2);
+
+  &--up {
+    transform: rotate(180deg);
+  }
+}

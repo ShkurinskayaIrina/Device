@@ -1,0 +1,65 @@
+.control {
+  font-size: 16px;
+  line-height: normal;
+}
+
+.control__label {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  column-gap: 16px;
+  cursor: pointer;
+}
+
+.control__label::before,
+.control__label::after {
+  content: "";
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 20px;
+  border: 2px solid $color-gray;
+  border-radius: 3px;
+}
+
+.control__input:hover + .control__label {
+  opacity: 0.6;
+}
+
+.control__input:focus + .control__label::after {
+  outline: 2px solid $color-purple;
+  outline-offset: 2px;
+}
+
+.control__input:active + .control__label {
+  outline: none;
+  opacity: 0.3;
+}
+
+.control__input:disabled + .control__label {
+  opacity: 0.1;
+}
+
+.control__input[type="checkbox"]:checked + .control__label::after {
+  background-image: url("../img/icon/check-black.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-color: $color-black;
+}
+
+.control__input[type="radio"] {
+  & + .control__label::after,
+  & + .control__label::before {
+    border-radius: 50%;
+  }
+}
+
+.control__input[type="radio"]:checked {
+  & + .control__label::before {
+    border-color: $color-black;
+  }
+
+  & + .control__label::after {
+    background-clip: padding-box;
+    background-color: $color-black;
+    border: 6px solid transparent;
+  }
+}

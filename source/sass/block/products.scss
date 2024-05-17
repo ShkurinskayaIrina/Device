@@ -1,0 +1,123 @@
+.products {
+  padding: 70px 40px 0;
+  background-color: $color-white;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.products__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    & .products__container::before {
+      z-index: 1;
+    }
+
+    & .products__info {
+      opacity: 0.6;
+    }
+
+    & .products__button {
+      z-index: 1;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+
+    & .products__info {
+      opacity: 0.3;
+    }
+
+    & .products__button {
+      background-image: linear-gradient(transparent 15px, $color-yellow-dark 15px 23px, transparent 23px 40px);
+    }
+  }
+}
+
+.products__container {
+  position: relative;
+  grid-column: 1 / -1;
+  margin-bottom: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $color-light;
+    opacity: 0.8;
+  }
+
+  &--new::after {
+    content: "new";
+    position: absolute;
+    right: 27px;
+    top: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    opacity: 0.6;
+    font-family: $font-heading;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+  }
+}
+
+.products__img {
+  display: block;
+}
+
+.products__info {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.products__heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.products__price {
+  margin-top: -4px;
+  justify-self: end;
+  color: $color-dark;
+}
+
+.products__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: 18px;
+  min-width: 220px;
+  background-image: linear-gradient(transparent 15px, $color-yellow 15px 23px, transparent 23px 40px);
+}
