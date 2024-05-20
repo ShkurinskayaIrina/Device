@@ -97,7 +97,7 @@
   background-color: $color-yellow;
   border: none;
   border-radius: 50%;
-  background-image: url("../../img/icon/information.svg");
+  background-image: url("../img/icon/information.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -106,7 +106,7 @@
     outline: none;
 
     &::before {
-      content: url("../../img/icon/triangle-info.svg");
+      content: url("../img/icon/triangle-info.svg");
       position: absolute;
       bottom: -50%;
       right: 6px;
