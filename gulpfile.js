@@ -79,15 +79,13 @@ const createWebp = () => {
 // Copy
 const copy = (done) => {
   gulp.src([
-    "fonts/**/*.{woff2,woff}",
+    "*fonts/**/*.{woff2,woff}",
     "*.ico",
-    "img/**/*.svg",
-    "!img/icons/*.svg",
-    "img/background/*.{jpg,png}",
+    // "*img/**/*.svg",
+    // "!/*img/icons/*.svg",
+    // "*/img/background/*.{jpg,png}",
     "manifest.webmanifest"
-  ], {
-    base: ""
-  })
+  ])
     .pipe(gulp.dest("build"))
   done();
 }
@@ -129,6 +127,7 @@ const watcher = () => {
 export const build = gulp.series (
   clean,
   copy,
+  copyImages,
   // optimizeImages,
   gulp.parallel (
     styles,
