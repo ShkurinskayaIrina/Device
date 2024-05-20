@@ -15,7 +15,7 @@ import browser from 'browser-sync';
 
 // Styles
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -31,14 +31,14 @@ const styles = () => {
 
 // HTML
 const html = () => {
-  return gulp.src("source/*.html")
+  return gulp.src("*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
 //Script
 const script = () => {
-  return gulp.src("source/js/*")
+  return gulp.src("js/*")
   .pipe(terser())
   .pipe(rename(function(path) {
     path.extname = '.min.js';
@@ -48,19 +48,19 @@ const script = () => {
 
 //Images
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*{jpg,png,svg}")
+  return gulp.src("img/**/*{jpg,png,svg}")
   .pipe(squoosh())
   .pipe(gulp.dest("build/img"));
 }
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*{jpg,png,svg}")
+  return gulp.src("img/**/*{jpg,png,svg}")
   .pipe(gulp.dest("build/img"));
 }
 
 // WebP
 const createWebp = () => {
-  return gulp.src("source/img/**/*{jpg,png}")
+  return gulp.src("/img/**/*{jpg,png}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"));
 }
@@ -68,7 +68,7 @@ const createWebp = () => {
 // Sprite - сборка из разных файлов одного спрайта
 
 // const sprite = () => {
-//   return gulp.src("source/img/icons/*.svg")
+//   return gulp.src("img/icons/*.svg")
 //     .pipe(svgstore({
 //       inlineSvg: true
 //     }))
@@ -79,14 +79,14 @@ const createWebp = () => {
 // Copy
 const copy = (done) => {
   gulp.src([
-    "source/fonts/**/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.svg",
-    "!source/img/icons/*.svg",
-    "source/img/background/*.{jpg,png}",
-    "source/manifest.webmanifest"
+    "fonts/**/*.{woff2,woff}",
+    "*.ico",
+    "img/**/*.svg",
+    "!img/icons/*.svg",
+    "img/background/*.{jpg,png}",
+    "manifest.webmanifest"
   ], {
-    base: "source"
+    base: ""
   })
     .pipe(gulp.dest("build"))
   done();
@@ -120,9 +120,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/**/*.js", gulp.series(script));
-  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("sass/**/*.scss", gulp.series(styles));
+  gulp.watch("js/**/*.js", gulp.series(script));
+  gulp.watch("*.html", gulp.series(html, reload));
 }
 
 // Build
