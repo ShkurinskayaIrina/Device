@@ -8,7 +8,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
-import squoosh from 'gulp-libsquoosh';
+// import squoosh from 'gulp-libsquoosh';
 import { deleteAsync } from 'del';
 import webp from 'gulp-webp';
 import browser from 'browser-sync';
@@ -47,11 +47,11 @@ const script = () => {
 }
 
 //Images
-const optimizeImages = () => {
-  return gulp.src("img/**/*{jpg,png,svg}")
-  .pipe(squoosh())
-  .pipe(gulp.dest("build/img"));
-}
+// const optimizeImages = () => {
+//   return gulp.src("img/**/*{jpg,png,svg}")
+//   .pipe(squoosh())
+//   .pipe(gulp.dest("build/img"));
+// }
 
 const copyImages = () => {
   return gulp.src("img/**/*{jpg,png,svg}")
